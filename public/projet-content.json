@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "text-blocs": [
+            {
+                "title" : "Concept du site",
+                "content" : "Le site a été élaboré suivant plusieurs technologies."
+            },
+            {
+                "title" : "Mise en place",
+                "content" : "On commence par créer la base de donnée.",
+                "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text-blocs": [
+            {
+                "title" : "Concept du site",
+                "content" : "Ce site est un projet de groupe issu de diverse collaboration"
+            },
+            {
+                "title" : "Mise en place",
+                "content" : "On commence par créer la base de donnée.",
+                "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text-blocs": [
+            {
+                "title" : "Concept du site",
+                "content" : "Entrainement sur du css réutilisable, façon bootstrap"
+            }
+        ]
+    }
+]
