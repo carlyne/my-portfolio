@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/*** Custom  variables*/
+/* default media query */
+$screen-med-w: 48rem;
+
+/*default sizes*/
+$full-w: 100%;
+$big-w: 75%;
+$med-w: 50%;
+$small-w: 25%;
+
+/*default spacing*/
+$big-spacing-in: 40px;
+$reg-spacing-in: 20px;
+$small-spacing-in: 10px;
+
+$big-spacing-out: 60px;
+$reg-spacing-out: 40px;
+$small-spacing-out: 20px;
+
+/* custom sizes */
+$body-w: $full-w;
+$custom-container-w: $big-w;
+$list-item-padding: $small-spacing-in;
+
+$navbar-h: 105px;
+
+
+
+/*** Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: $body-w;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #222;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+
+    margin: 0;
+    padding: 0;
+
+    &.row-logo {
+        width: auto;
+        height: 100%;
+    }
+
+    &.col-logo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*** Container Classes */
+.container {
+    width: 100%;
+    margin: 0 auto $big-spacing-in;
+    position: relative;
+
+    &.custom {
+        // width: 80% if needed on mobile
+        @media (min-width: $screen-med-w) {
+            width: $custom-container-w; 
+        }
+    }
+
+    &.space-in {
+        padding: $reg-spacing-in;
+    }
+}
+
+.navbar {
+    width: $full-w;
+    height: $navbar-h;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    position: relative;
+
+    flex-direction: row; // default direction
+    -webkit-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center; //default alignment
+    -webkit-box-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+
+    &.col {
+        @media (min-width: $screen-med-w) {
+            min-height: 100vh;
+            flex-direction: column;
+            -webkit-box-flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            min-width:$navbar-h;
+        }
+
+        &.sm-w {
+            width: $full-w;
+            @media (min-width: $screen-med-w) {
+                width: $small-w;
+            }
+        }
+    }
+}
+
+.navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+
+    & li {
+        padding: $list-item-padding;
+        display: block;
+    }
+
+    & a {
+        font-size: 0.95rem;
+
+        &:hover {
+            color: lighten(#222, 20%);
+        }
+    }
+
+    &.list-row li{
+        display: inline-block;
+    }
+
+    @media (min-width: $screen-med-w) {
+        display: block;
+    }
+}
+
+.content-box {
+    width: 100%;
+    padding: $reg-spacing-in;
+    flex-basis: $small-w;
+    flex-grow: 1;
+    overflow: hidden;
+
+    &.space-none {
+        padding: 0;
+    }
+
+    &.space-out {
+        margin: 10px 0;
+        @media (min-width: $screen-med-w){
+            margin: 10px;
+        }
+
+        &.gallery {
+            @media (min-width: $screen-med-w){
+                width: calc((100% / 4) - 20px);
+            }
+        }
+    }
+}
+
+
+/*** Modifier Classes*/
+
+.d-none-s {
+    @media (min-width: $screen-med-w) {
+        display: none;
+    }
+}
+
+.d-none-m {
+    display: none;
+    @media (min-width: $screen-med-w) {
+        display: block;
+    }
+}
+
+/* Sizes */ 
+.full-w {
+    width: $full-w;
+}
+
+.med-w {
+    width: $med-w;
+}
+
+.sm-w {
+    width: $small-w;
+}
+
+
+/* Position */
+.fixed {
+    position: fixed;
+    z-index: 200;
+
+    &.top {
+        top:0;
+    }
+
+    &.left {
+        left: 0;
+    }
+
+}
+
+
+/* Spacing */
+.space-in {
+    padding: $reg-spacing-in;
+}
+
+.space-out {
+    margin: $reg-spacing-out;
+}
+
+/* Grid */
+.d-grid {
+    display: flex;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex;
+    
+    flex-direction: column; //default
+    -webkit-box-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    flex-wrap: wrap;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+    &.resp {
+        @media (min-width: $screen-med-w) {
+            flex-direction: row;
+            -webkit-box-flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+        }
+    }
+}
+
+.d-row {
+    flex-direction: row;
+    -webkit-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+}
+
+.d-col {
+    flex-direction: column;
+    -webkit-box-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.d-end {
+    justify-content: flex-end;
+    -webkit-box-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+}
+
+.d-center-s {
+    @media (min-width: $screen-med-w) {
+        justify-content: center;
+        -webkit-box-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+    }
+}
+
+.d-center-m {
+    justify-content: center;
+    -webkit-box-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+}
+
+.d-between-s {
+    @media (min-width: $screen-med-w) {
+        justify-content: space-between;
+        -webkit-box-justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+    }
+}
+
+.d-between-m {
+    justify-content: space-between;
+    -webkit-box-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+}
+
+.d-around-s {
+    @media (min-width: $screen-med-w) {
+        justify-content: space-around;
+        -webkit-box-justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -ms-justify-content: space-around;
+    }
+}
+
+.d-around-m {
+    justify-content: space-around;
+    -webkit-box-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+}
+
+
+/** Surcouche */
+#app {
+    width: $full-w;
+    margin-left: 0;
+    margin-top: $navbar-h;
+
+    @media (min-width: $screen-med-w) {
+    margin-left: 25%;
+    margin-top: 0;
+    width: 75%;
+    }
+}
