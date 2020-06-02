@@ -3,6 +3,9 @@ import VueRouter from 'vue-router';
 
 import Home from '../views/Home/Home.vue';
 import About from '../views/About/About.vue';
+import Project from '../views/Project/Project.vue';
+import Lab from '../views/Lab/Lab.vue';
+import Illustration from '../views/Illustration/Illustration.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +20,21 @@ Vue.use(VueRouter)
     name: 'About',
     component: About
     
+  },
+  {
+    path: '/project/:id',
+    component: Project,
+    name: "route-project"
+  },
+  {
+    path: '/lab/:id',
+    component: Lab,
+    name: "route-lab"
+  },
+  {
+    path: '/illustration/:id',
+    component: Illustration,
+    name: "route-illustration"
   }
 ]
 

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "category": "projet",
+        "category": "project",
         "title": "portfolio",
         "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
     },
@@ -20,7 +20,7 @@
     },
     {
         "id": 4,
-        "category": "projet",
+        "category": "project",
         "title": "Plantboard",
         "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
     },
@@ -32,7 +32,7 @@
     },
     {
         "id": 6,
-        "category": "projet",
+        "category": "project",
         "title": "librairie CSS",
         "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
     }

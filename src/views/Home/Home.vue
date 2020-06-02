@@ -1,6 +1,6 @@
 <template>
     <main class="container d-grid resp">
-      <AppCard></AppCard>
+      <AppCard v-for="(item, index) in galleryItems" :key="index" :galleryItem="item"></AppCard>
     </main>
 </template>
 
@@ -12,6 +12,16 @@ export default {
   name: 'Home',
   components: {
     AppCard
+  },
+
+  data() {
+    return {
+      galleryItems: []
+    }
+  },
+
+  created() {
+    this.galleryItems = this.$store.state.galleryItems;
   }
 }
 </script>
