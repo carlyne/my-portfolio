@@ -1,16 +1,26 @@
 <template>
-    <article class="content-box space-out gallery">
+    <article v-bind:style="styleItem" class="content-box space-out gallery">
         <router-link :to="path + galleryItem.id" tag="h2">{{ galleryItem.title }}</router-link>
+        
     </article>
 </template>
 
 <script>
 export default {
-	name: "app-card",
+	name: "app-card",   
 	
 	data: function() {
         return {
-			path: "",
+            path: "",
+            styleItem: {
+                backgroundColor: 'aquamarine',
+                backgroundImage: 'url(' + "'" + this.galleryItem.srcImg + "'" + ')',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                flexGrow: Math.floor(Math.random() * (2 - 1 + 1)) + 1
+            }
+            
 		}
     },
 
