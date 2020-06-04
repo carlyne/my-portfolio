@@ -1,8 +1,6 @@
 <template>
     <div class="project-view container space-in">
-        <header class="container">
-            {{ projectItem.srcImg }}
-        </header>
+        <header :style="{backgroundImage : 'url( ' + projectItem.srcImg + ')' }" class="container"> </header>
         <h1> {{ projectItem.title }} </h1>
 
         <section>
