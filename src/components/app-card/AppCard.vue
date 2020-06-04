@@ -1,6 +1,6 @@
 <template>
     <article v-bind:style="styleItem" class="content-box space-out gallery">
-        <router-link :to="path + galleryItem.id" tag="h2" :projectItem="galleryItem">{{ galleryItem.title }}</router-link>
+        <router-link :to="path + galleryItem.id" tag="h2" :item="galleryItem">{{ galleryItem.title }}</router-link>
         
     </article>
 </template>
