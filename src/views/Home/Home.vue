@@ -1,11 +1,10 @@
 <template>
     <main class="container d-grid resp">
-      <AppCard v-for="(item, index) in galleryItems" :key="index" :galleryItem="item"></AppCard>
+      <AppCard v-for="(item, index) in diplayGalleryItem" :key="index" :galleryItem="item"></AppCard>
     </main>
 </template>
 
 <script>
-
 import AppCard from '../../components/app-card/AppCard.vue'; 
 
 export default {
@@ -20,8 +19,29 @@ export default {
     }
   },
 
+  methods: {
+    getItems() {
+     return this.galleryItems = this.$store.state.galleryItems;
+    },
+
+    getFilteredItems() {
+     return this.galleryItems = this.$store.state.filteredItems;
+    }
+  },
+
+  computed: {
+    diplayGalleryItem() {
+      if(this.$store.state.filteredItems.length) {
+        return this.getFilteredItems();
+      }
+
+      return this.getItems()
+      
+    }
+  },
+
   created() {
-    this.galleryItems = this.$store.state.galleryItems;
+    this.getItems()
   }
 }
 </script>
