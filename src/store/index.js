@@ -5,12 +5,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    galleryItems : []
+    galleryItems : [],
+    filteredItems: []
   },
 
   mutations: {
     addItem(state, item) {
       state.galleryItems.push(item);
+    },
+
+    filtering(state, category) {
+      state.filteredItems = state.galleryItems.filter(item => 
+        item.category === category
+      )
     }
   },
 
@@ -23,6 +30,10 @@ export default new Vuex.Store({
             commit('addItem', item);
           }
         });
+    },
+
+    filterGalleryItem({commit}, category) {
+      commit('filtering', category)
     }
   }
 })

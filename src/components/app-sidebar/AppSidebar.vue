@@ -3,9 +3,10 @@
         <router-link to="/"><img class="col-logo" src="../../assets/logo-krly.png" alt="logo"></router-link>
         <nav>
             <ul class="navbar-menu">
-                <li>Projets</li>
-                <li>Experimentations</li>
-                <li>Illustrations</li>
+                <li @click="getCategory('none')">Tout</li>
+                <li @click="getCategory('project')">Projets</li>
+                <li @click="getCategory('lab')">Experimentations</li>
+                <li @click="getCategory('illustration')">Illustrations</li>
                 <li><router-link to="/about">A propos</router-link></li>
             </ul>
         </nav>
@@ -17,6 +18,12 @@
 
 <script>
 export default {
-	name: 'app-sidebar'
+    name: 'app-sidebar',
+    
+    methods: {
+        getCategory(category) {
+            return this.$store.dispatch('filterGalleryItem', category)
+        }
+    }
 }
 </script>
