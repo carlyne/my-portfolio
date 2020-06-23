@@ -1,5 +1,14 @@
 div.project-view header {
 	width: 100%;
+	height: 400px;
+	background-color: aquamarine;
+	background-repeat: none;
+	background-size: cover;
+}
+
+section img {
+	width: 100%;
 	height: 300px;
-	border: 1px solid blue;
+	object-fit: cover;
+	object-position: center;
 }

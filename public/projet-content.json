@@ -18,11 +18,11 @@
         "text-blocs": [
             {
                 "title" : "Concept du site",
-                "content" : "Ce site est un projet de groupe issu de diverse collaboration"
+                "content" : "Projet de dashboard de gestion de plantes pour organiser un suvit des différentes variétées de plantes d'interieurs ou de balcon. Le but est de fournir à l'utilisateur un moyen simple et rapide de retrouver ses plantes dans une base de donnée et de les ajotuer à son dashboard pour savoir quand les arroser, les rempoter, etc..."
             },
             {
                 "title" : "Mise en place",
-                "content" : "On commence par créer la base de donnée.",
+                "content" : "Il a déjà fallu déterminer les utilisateurs cibles de l'application via des personnas, afin de déterminer les fonctionnalités clés à intégrer dans l'application.",
                 "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
             }
         ]

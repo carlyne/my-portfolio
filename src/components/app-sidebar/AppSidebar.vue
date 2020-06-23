@@ -20,5 +20,3 @@ export default {
 	name: 'app-sidebar'
 }
 </script>
-
-<style scoped lang="scss" src="./_app-sidebar.scss"></style>

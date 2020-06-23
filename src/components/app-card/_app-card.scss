@@ -6,12 +6,16 @@ article.content-box {
 	display: flex;
 	align-items: flex-end;
 	background-repeat: no-repeat;
+	transform:skewX(5deg);
 	transition: border 100ms 10ms ease-in-out,
 		background 200ms ease-in-out;
 	
 	&:hover {
-        border: 1px solid #222;
-        background:rgba(255, 255, 255, .5) !important;
+        // border: 1px solid #222;
+        background: rgb(195,34,129) !important;
+		background: -moz-radial-gradient(circle, rgba(195,34,129,1) 0%, rgba(253,135,45,1) 100%) !important;
+		background: -webkit-radial-gradient(circle, rgba(195,34,129,1) 0%, rgba(253,135,45,1) 100%) !important;
+		background: radial-gradient(circle, rgba(195,34,129,1) 0%, rgba(253,135,45,1) 100%) !important;
 	}
 	
 	&:hover h2 {
@@ -30,6 +34,5 @@ article.content-box {
 		opacity: 0;
 		transition: opacity 100ms 50ms ease-in,
 			transform 200ms 50ms ease-in;
-			
 	}
 }
