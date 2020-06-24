@@ -1,6 +1,6 @@
 <template>
-    <header class="app-sidebar navbar col sm-w fixed top left d-around-s">
-        <router-link to="/" class="col-logo" tag="h1">[ KRLY [</router-link>
+    <header class="app-sidebar navbar col sm-w fixed top left d-around-s d-center-m">
+        <router-link to="/" tag="h1">[ KRLY [</router-link>
         <nav>
             <ul class="navbar-menu">
                 <li @click="getCategory('none')"><router-link to="/">Tout</router-link></li>
