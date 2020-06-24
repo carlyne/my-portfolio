@@ -1,7 +1,9 @@
 <template>
-    <article v-bind:style="styleItem" class="content-box space-out gallery">
-        <router-link :to="path + galleryItem.id" tag="h2" :item="galleryItem">{{ galleryItem.title }}</router-link>
-    </article>
+    <transition appear appear-active-class="blur-enter-active" leave-active-class="blur-leave-active">
+        <article v-bind:style="styleItem" class="content-box space-out gallery">
+            <router-link :to="path + galleryItem.id" tag="h2" :item="galleryItem">{{ galleryItem.title }}</router-link>
+        </article>
+    </transition>
 </template>
 
 <script>

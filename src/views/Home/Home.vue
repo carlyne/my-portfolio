@@ -1,6 +1,6 @@
 <template>
     <main class="container d-grid resp">
-      <AppCard v-for="(item, index) in diplayGalleryItem" :key="index" :galleryItem="item"></AppCard>
+        <AppCard v-for="(item, index) in diplayGalleryItem" :key="index" :galleryItem="item"></AppCard>
     </main>
 </template>
 
@@ -46,8 +46,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-  main {
-     padding: 50px;
-  }
-</style>
+<style scoped lang="scss" src="./home.scss"></style>
