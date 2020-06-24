@@ -11,13 +11,13 @@ body {
     font-family: $body-font;
     font-size: 1.15rem;
     font-weight: 500;
-    color: #222;
+    color: #fdfadc;
     margin: 0 auto;
     padding: 0;
-    background: rgb(195,34,34);
-    background: -moz-radial-gradient(circle, rgba(195,34,34,0.09005609079569332) 0%, rgba(253,230,45,0.1824930655856093) 100%);
-    background: -webkit-radial-gradient(circle, rgba(195,34,34,0.09005609079569332) 0%, rgba(253,230,45,0.1824930655856093) 100%);
-    background: radial-gradient(circle, rgba(195,34,34,0.09005609079569332) 0%, rgba(253,230,45,0.1824930655856093) 100%);
+    background-color: #36393f;
+    // background: -moz-radial-gradient(circle, rgba(195,34,34,0.09005609079569332) 0%, rgba(253,230,45,0.1824930655856093) 100%);
+    // background: -webkit-radial-gradient(circle, rgba(195,34,34,0.09005609079569332) 0%, rgba(253,230,45,0.1824930655856093) 100%);
+    // background: radial-gradient(circle, rgba(195,34,34,0.09005609079569332) 0%, rgba(253,230,45,0.1824930655856093) 100%);
 }
 
 a{
