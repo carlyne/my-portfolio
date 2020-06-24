@@ -3,11 +3,11 @@
         <router-link to="/" class="col-logo" tag="h1">[ KRLY [</router-link>
         <nav>
             <ul class="navbar-menu">
-                <li @click="getCategory('none')">Tout</li>
+                <li @click="getCategory('none')"><router-link to="/">Tout</router-link></li>
                 <li @click="getCategory('project')">Projets</li>
                 <li @click="getCategory('lab')">Experimentations</li>
                 <li @click="getCategory('illustration')">Illustrations</li>
-                <li><router-link to="/about">A propos</router-link></li>
+                <router-link to="/about" tag="li">A propos</router-link>
             </ul>
         </nav>
         <footer class="d-none-m">
@@ -27,3 +27,5 @@ export default {
     }
 }
 </script>
+
+<style scoped lang="scss" src="./app-sidebar.scss"></style>
