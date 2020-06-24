@@ -35,5 +35,23 @@
         "category": "project",
         "title": "librairie CSS",
         "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
+    },
+    {
+        "id": 7,
+        "category": "project",
+        "title": "Jeux de société",
+        "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
+    },
+    {
+        "id": 8,
+        "category": "project",
+        "title": "Jeux vidéo",
+        "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
+    },
+    {
+        "id": 9,
+        "category": "illustration",
+        "title": "pattern",
+        "srcImg" : "https://i.postimg.cc/yNM9ph4Y/etiquette.jpg"
     }
 ]

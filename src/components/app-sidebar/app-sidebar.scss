@@ -1,0 +1,30 @@
+@import '../../variables';
+
+@keyframes gradient {
+    0% {
+        filter: blur(0px);
+        transform: translateX(0);
+        opacity: 0;
+        border-radius: 0;
+    }
+    30% {
+        filter: blur(2px);
+        transform: translateX(2px);
+        opacity: .5;
+        border-radius: 5px;
+    } 
+    100% {
+        background: lighten($main-color, 10%);
+        opacity: 1;
+        border-radius: 0;
+    }
+}
+
+.navbar-menu li {
+    cursor: pointer;
+    background: none;
+
+    &:hover {
+        animation: gradient 500ms ease-in both;
+    }
+}

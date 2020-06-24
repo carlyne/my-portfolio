@@ -18,8 +18,7 @@ export default {
                 backgroundImage: 'url(' + "'" + this.galleryItem.srcImg + "'" + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                flexGrow: Math.floor(Math.random() * (2 - 1 + 1)) + 1
+                backgroundRepeat: 'no-repeat'
             }
             
 		}
@@ -40,4 +39,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss" src="./_app-card.scss"></style>
+<style scoped lang="scss" src="./app-card.scss"></style>

@@ -42,4 +42,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss" src="./_project-view.scss"></style>
+<style scoped lang="scss" src="./project-view.scss"></style>

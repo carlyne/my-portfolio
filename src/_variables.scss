@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap');
+
+/*** Custom  variables*/
+/* default media query */
+$screen-med-w: 48rem;
+
+/*default sizes*/
+$full-w: 100%;
+$big-w: 75%;
+$med-w: 50%;
+$small-w: 25%;
+$xsmall-w: 15%;
+
+
+/*default spacing*/
+$big-spacing-in: 40px;
+$reg-spacing-in: 20px;
+$small-spacing-in: 10px;
+
+$big-spacing-out: 60px;
+$reg-spacing-out: 40px;
+$small-spacing-out: 20px;
+
+/* custom sizes */
+$body-w: $full-w;
+$custom-container-w: $big-w;
+$list-item-padding: $small-spacing-in;
+
+$navbar-h: 105px;
+
+/*typeface */
+$head-font: 'Unna', serif;
+$body-font: 'Lato', sans-serif;
+
+/*colors*/
+$main-color: #ca3e47;
