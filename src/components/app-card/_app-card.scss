@@ -9,6 +9,7 @@ article.content-box {
 	transform:skewX(5deg);
 	transition: border 100ms 10ms ease-in-out,
 		background 200ms ease-in-out;
+
 	
 	&:hover {
         // border: 1px solid #222;
@@ -35,4 +36,24 @@ article.content-box {
 		transition: opacity 100ms 50ms ease-in,
 			transform 200ms 50ms ease-in;
 	}
+}
+
+@keyframes blurin {
+    from {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    to {
+        filter: blur(10px);
+        opacity: 0;
+    }
+}
+
+.blur-leave-active {
+    animation: blurin 250ms ease-in both;
+}
+
+.blur-enter-active {
+    animation: blurin 250ms ease-in reverse both;
 }
