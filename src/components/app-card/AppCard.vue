@@ -17,7 +17,7 @@ export default {
                 backgroundColor: 'aquamarine',
                 backgroundImage: 'url(' + "'" + this.galleryItem.srcImg + "'" + ')',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: '50% 10%',
                 backgroundRepeat: 'no-repeat'
             }
             
@@ -30,7 +30,7 @@ export default {
         if (this.galleryItem.category == "project") {
             return this.path = "project/";
         } else if (this.galleryItem.category == "illustration"){
-            return this.path = "illusration/";
+            return this.path = "illustration/";
         } else {
             return this.path = "lab/";
         }
