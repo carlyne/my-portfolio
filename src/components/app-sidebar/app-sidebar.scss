@@ -14,7 +14,7 @@
         border-radius: 5px;
     } 
     100% {
-        background: lighten($main-color, 10%);
+        background: $main-color;
         opacity: 1;
         border-radius: 0;
     }
