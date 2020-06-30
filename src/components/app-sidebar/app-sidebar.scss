@@ -20,11 +20,54 @@
     }
 }
 
+nav {
+    z-index: 200;
+}
+
 .navbar-menu li {
     cursor: pointer;
     background: none;
+    z-index: 200;
 
     &:hover {
         animation: gradient 500ms ease-in both;
     }
+}
+
+h1 {
+    z-index: 200;
+}
+
+.shape {
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    @media (min-width: $screen-med-w) {
+        width: 500px;
+        height: 500px;
+    }
+	
+	svg {
+        margin: auto;
+        width: 400px;
+        height: 400px;
+
+        @media (min-width: $screen-med-w) {
+            width: 500px;
+            height: 500px;
+        }
+	}
+	
+	.polymorph {
+		filter: blur(50px);
+		margin: auto;
+		fill: darksalmon;
+	}
 }
